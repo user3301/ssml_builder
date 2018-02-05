@@ -38,7 +38,19 @@ class Speech:
         # TODO: the duration is not validated
         self.content += "<break time='>" + duration + "'/>"
         return self
-        
+
+    # create break tag that will pause the audio based upon the strength level.
+    def pauseByStrength(self,strength):
+        self.present(strength,"the strength was null")
+        strength = strength.lower().strip()
+        if strength in ("none", "x-weak", "weak", "medium", "strong", "x-strong"):
+            self.content += "<break strength='" + strength + "'/>"
+            return self
+        else:
+            raise ValueError("The strength was not valid.")
+    
+
+
     # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
     def present(self,value,msg):
         if value is None:
