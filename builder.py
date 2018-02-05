@@ -40,6 +40,8 @@ class Speech:
         return self
 
     # create break tag that will pause the audio based upon the strength level.
+    # @param strength the strength level
+    # @returns {self}
     def pauseByStrength(self,strength):
         self.present(strength,"the strength was null")
         strength = strength.lower().strip()
@@ -50,11 +52,26 @@ class Speech:
             raise ValueError("The strength was not valid.")
     
     # insert a say-as = spell-out tag
+    # @param word the raw text insert into the say-as tag
+    # @returns {self}
     def spell(self,word):
         self.present(word,"The word was null")
         self.content += "<say-as interpret-as='spell-out'>" + self.escape(word) + "</say-as>"
         return self
-        
+
+    # insert a say-as = spell-out tag for every single word
+    # @param words the raw text
+    # @param delay the interval in each word
+    # @returns {self}
+    def spellSlowly(self,words,delay):
+        self.present(words,"The word was null")
+        # TODO: validate the delay
+        for word in words.split(''):
+            self.content += "<say-as interpret-as='spell-out'>" + self.escape(word) + "</say-as>"
+            self.pause(delay)
+        return self
+
+
 
     # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
     def present(self,value,msg):
