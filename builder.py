@@ -49,7 +49,12 @@ class Speech:
         else:
             raise ValueError("The strength was not valid.")
     
-
+    # insert a say-as = spell-out tag
+    def spell(self,word):
+        self.present(word,"The word was null")
+        self.content += "<say-as interpret-as='spell-out'>" + self.escape(word) + "</say-as>"
+        return self
+        
 
     # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
     def present(self,value,msg):
