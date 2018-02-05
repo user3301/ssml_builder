@@ -22,6 +22,13 @@ class Speech:
         self.content += "<p>" + self.escape(paragraph) + "</p>"
         return self
 
+    # insert a sentence tag.
+    # @param saying The sentence to insert
+    # @returns {self}
+    def sentence(self,saying):
+        self.present(saying,"The sentence was null")
+        self.content += "<s>" self.escape(saying) + "</s>"
+        return self
         
     # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
     def present(self,value,msg):
