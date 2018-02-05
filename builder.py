@@ -1,5 +1,4 @@
 import string,numbers,types
-NumberTypes = (types.IntType,types.LongType,types.FloatType,types.ComplexType)
 
 class Speech:
 
@@ -8,6 +7,8 @@ class Speech:
         self.content = ""
 
     # This appends raw text into the <speak/> tag
+    # @param saying The raw text insert into the speak tag.
+    # returns {self} 
     def say(self,saying):
         self.present(saying,"The saying provided was null")
         self.content += self.escape(saying)
@@ -22,9 +23,15 @@ class Speech:
 
     # This method escapes any special characters that will cause SSML to be invalid
     def escape(self,word):
-        if isinstance(word,(str,unicode)):
+        if isinstance(word,str):
+
             return word
-        if isinstance(word,NumberTypes):
+        if isinstance(word,(int,float,complex)):
+            word = word.replace('&' 'and')
+            word = word.replace('<', '')
+            word = word.replace('>', '')
+            word = word.replace('"', '')
+            word = word.replace('\'', '')
             return word
         if isinstance(word,bool):
             return word
