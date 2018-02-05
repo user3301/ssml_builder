@@ -27,9 +27,15 @@ class Speech:
     # @returns {self}
     def sentence(self,saying):
         self.present(saying,"The sentence was null")
-        self.content += "<s>" self.escape(saying) + "</s>"
+        self.content += "<s>" + self.escape(saying) + "</s>"
         return self
-        
+
+    # insert a break tag.
+    # @param duration the duration for the pause
+    # @returns {self}
+    def pause(self,duration):
+        self.present(duration,"The duration was null")
+        self.content += "<>"
     # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
     def present(self,value,msg):
         if value is None:
