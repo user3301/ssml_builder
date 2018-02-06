@@ -24,7 +24,13 @@ class Test_Builder(unittest.TestCase):
         speech = speech.paragraph("Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.")
 
         self.assertEqual(speech.content, ["<p>Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.</p>"])
+        self.assertEqual(speech.ssml(False), "<speak><p>Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.</p></speak>")
 
+    def test_030_Sentence(self):
+        speech = Speech()
+        speech = speech.sentence("A sentence is a set of words that is complete in itself, typically containing a subject and predicate")
+
+        self.assertEqual(speech.content, ["<s>A sentence is a set of words that is complete in itself, typically containing a subject and predicate</s>"])
 
 if __name__ == "__main__":
     unittest.main()

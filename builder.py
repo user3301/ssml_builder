@@ -30,7 +30,7 @@ class Speech:
     # @returns {self}
     def sentence(self, saying):
         self.present(saying, "The sentence was null")
-        self.content += "<s>" + self.escape(saying) + "</s>"
+        self.content.append("<s>" + self.escape(saying) + "</s>")
         return self
 
     # insert a break tag.
