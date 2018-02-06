@@ -32,5 +32,12 @@ class Test_Builder(unittest.TestCase):
 
         self.assertEqual(speech.content, ["<s>A sentence is a set of words that is complete in itself, typically containing a subject and predicate</s>"])
 
+    def test_040_Pause(self):
+        speech = Speech()
+        speech.say("Hello.")
+        speech.pause("1s")
+
+        self.assertEqual(speech.content,["Hello.", "<break time='1s'/>"])
+
 if __name__ == "__main__":
     unittest.main()

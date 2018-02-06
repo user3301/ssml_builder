@@ -3,6 +3,8 @@ A utiliy class for building SSML format text.
 @author: user3301
 @date: 2018-02-06
 """
+import re
+
 class Speech:
 
     # @constructor
@@ -38,8 +40,8 @@ class Speech:
     # @returns {self}
     def pause(self, duration):
         self.present(duration, "The duration was null")
-        # TODO: the duration is not validated
-        self.content += "<break time='>" + duration + "'/>"
+        self.validateDuration(duration)
+        self.content.append("<break time='" + duration + "'/>")
         return self
 
     # create break tag that will pause the audio based upon the strength level.
@@ -66,7 +68,7 @@ class Speech:
     # @param words the raw text
     # @param delay the interval in each word
     # @returns {self}
-    def spellSlowly(self, words,delay):
+    def spellSlowly(self, words, delay):
         self.present(words, "The word was null")
         # TODO: validate the delay
         for word in words.split(''):
@@ -102,3 +104,19 @@ class Speech:
         if isinstance(word,(int, float, complex, bool)):
             return word
         raise Exception("received invalid type")
+
+    # check if the duration is in correct format (a positive number followed by 's' or 'ms') and in the legit range (0ms - 10000ms)
+    # @param duration The duration of a pause
+    # @throws Exception  when the duration is not in the correct format or exceed the legit length
+    def validateDuration(self, duration):
+        pattern = "^(\d*\.?\d+)(s|ms)$"
+        if re.match(pattern, duration):
+            matcher = re.search(pattern, duration)
+            pauseDuration = int(matcher.group(1))
+            pauseType = matcher.group(2)
+            if pauseType.lower() == 's' and pauseDuration > 10:
+                raise Exception("The duration exceeds the maximum length.")
+            elif pauseDuration > 10000:
+                raise Exception("The duration exceeds the maximum length.")
+        else:
+            raise Exception("The format of the duration is incorrect.")
