@@ -15,21 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="builder.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="builder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="90" column="37" lean-forward="false" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
+            <state relative-caret-position="399">
+              <caret line="24" column="68" lean-forward="false" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_builder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="69" lean-forward="true" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+            <state relative-caret-position="475">
+              <caret line="25" column="268" lean-forward="false" selection-start-line="25" selection-start-column="268" selection-end-line="25" selection-end-column="268" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -52,8 +52,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/builder.py" />
         <option value="$PROJECT_DIR$/tests/test_builder.py" />
+        <option value="$PROJECT_DIR$/builder.py" />
       </list>
     </option>
   </component>
@@ -101,11 +101,6 @@
             <path>
               <item name="ssml-builder" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssml-builder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssml-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssml-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -169,27 +164,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 12h 45m 13s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 12h 53m 38s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 12h 53m 54s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 12h 54m 11s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 14m 57s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 16m 02s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 16m 23s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 18m 02s.xml">
       <configuration name="Unittests in test_builder.py" configurationId="tests" />
     </history-entry>
@@ -197,6 +171,27 @@
       <configuration name="Unittests in test_builder.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 19m 04s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 31m 37s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 32m 10s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 32m 27s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 33m 45s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 34m 01s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 34m 32s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.06 at 14h 38m 51s.xml">
       <configuration name="Unittests in test_builder.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -274,21 +269,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/builder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="90" column="37" lean-forward="false" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="69" lean-forward="true" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+        <state relative-caret-position="475">
+          <caret line="25" column="268" lean-forward="false" selection-start-line="25" selection-start-column="268" selection-end-line="25" selection-end-column="268" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="68" lean-forward="false" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>

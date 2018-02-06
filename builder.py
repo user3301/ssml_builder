@@ -1,3 +1,8 @@
+"""
+A utiliy class for building SSML format text.
+@author: user3301
+@date: 2018-02-06
+"""
 class Speech:
 
     # @constructor
@@ -17,7 +22,7 @@ class Speech:
     # @returns {self}
     def paragraph(self, paragraph):
         self.present(paragraph, "The paragraph was null")
-        self.content += "<p>" + self.escape(paragraph) + "</p>"
+        self.content.append("<p>" + self.escape(paragraph) + "</p>")
         return self
 
     # insert a sentence tag.

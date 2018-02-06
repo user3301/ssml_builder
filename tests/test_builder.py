@@ -19,6 +19,12 @@ class Test_Builder(unittest.TestCase):
 
         self.assertEqual(speech.content, ["Hello, its me and polly"])
 
+    def test_020_Paragraph(self):
+        speech = Speech()
+        speech = speech.paragraph("Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.")
+
+        self.assertEqual(speech.content, ["<p>Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.</p>"])
+
 
 if __name__ == "__main__":
     unittest.main()
