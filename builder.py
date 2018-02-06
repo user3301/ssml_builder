@@ -1,17 +1,15 @@
-import string,numbers,types
-
 class Speech:
 
     # @constructor
     def __init__(self):
-        self.content = ""
+        self.content = []
 
     # This appends raw text into the <speak/> tag
     # @param saying The raw text insert into the speak tag.
     # returns {self} 
     def say(self,saying):
         self.present(saying,"The saying provided was null")
-        self.content += self.escape(saying)
+        self.content.append(self.escape(saying))
         return self
 
     # inserts a paragraph tag.
@@ -71,7 +69,7 @@ class Speech:
             self.pause(delay)
         return self
 
-
+    # make this speech into ssml text
 
     # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
     def present(self,value,msg):
@@ -81,15 +79,13 @@ class Speech:
 
     # This method escapes any special characters that will cause SSML to be invalid
     def escape(self,word):
-        if isinstance(word,str):
-            word = word.replace('&' 'and')
-            word = word.replace('<', '')
-            word = word.replace('>', '')
-            word = word.replace('"', '')
-            word = word.replace('\'', '')
+        if isinstance(word, str):
+            # word = word.replace('\&' 'and')
+            # word = word.replace('\<', '')
+            # word = word.replace('\>', '')
+            # word = word.replace('\"', '')
+            # word = word.replace('\'', '')
             return word
         if isinstance(word,(int,float,complex,bool)):
             return word
         raise Exception("received invalid type")
-
-    
