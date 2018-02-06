@@ -88,11 +88,11 @@ class Speech:
     # This method escapes any special characters that will cause SSML to be invalid
     def escape(self, word):
         if isinstance(word, str):
-            # word = word.replace('\&' 'and')
-            # word = word.replace('\<', '')
-            # word = word.replace('\>', '')
-            # word = word.replace('\"', '')
-            # word = word.replace('\'', '')
+            word = word.replace('&', 'and')
+            word = word.replace('<', '')
+            word = word.replace('>', '')
+            word = word.replace('\"', '')
+            word = word.replace('\'', '')
             return word
         if isinstance(word,(int, float, complex, bool)):
             return word
