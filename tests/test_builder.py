@@ -9,6 +9,8 @@ class Test_Builder(unittest.TestCase):
         speech.say("Hello,this is polly")
 
         self.assertEqual(speech.content, ['Hello,this is polly'])
+        self.assertEqual(speech.ssml(True), "Hello,this is polly")
+        self.assertEqual(speech.ssml(False), "<speak>Hello,this is polly</speak>")
 
 
 if __name__ == "__main__":
