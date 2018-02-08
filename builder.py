@@ -1,9 +1,10 @@
 """
-A utiliy class for building SSML format text.
+A utility class for building SSML format text.
 @author: user3301
 @date: 2018-02-06
 """
 import re
+
 
 class Speech:
 
@@ -55,7 +56,7 @@ class Speech:
             return self
         else:
             raise ValueError("The strength was not valid.")
-    
+
     # insert a say-as = spell-out tag
     # @param word the raw text insert into the say-as tag
     # @returns {self}
@@ -70,7 +71,7 @@ class Speech:
     # @returns {self}
     def spellSlowly(self, words, delay):
         self.present(words, "The word was null")
-        # TODO: validate the delay
+        self.validateDuration(delay)
         for word in words.split(''):
             self.content += "<say-as interpret-as='spell-out'>" + self.escape(word) + "</say-as>"
             self.pause(delay)
@@ -79,7 +80,7 @@ class Speech:
     # make this speech into ssml text
 
     # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
-    def present(self, value,msg):
+    def present(self, value, msg):
         if value is None:
             raise Exception(msg)
 
@@ -101,7 +102,7 @@ class Speech:
             word = word.replace('\"', '')
             word = word.replace('\'', '')
             return word
-        if isinstance(word,(int, float, complex, bool)):
+        if isinstance(word, (int, float, complex, bool)):
             return word
         raise Exception("received invalid type")
 
