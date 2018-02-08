@@ -94,7 +94,7 @@ class Speech:
 
     # This method escapes any special characters that will cause SSML to be invalid
     def escape(self, word):
-        if isinstance(word, str):
+        if isinstance(word, basestring):
             word = word.replace('&', 'and')
             word = word.replace('<', '')
             word = word.replace('>', '')
