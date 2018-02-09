@@ -106,7 +106,8 @@ class Speech:
             return word
         raise Exception("received invalid type")
 
-    # check if the duration is in correct format (a positive number followed by 's' or 'ms') and in the legit range (0ms - 10000ms)
+    # check if the duration is in correct format (a positive number followed by 's' or 'ms') and in the legit
+    # range (0ms - 10000ms)
     # @param duration The duration of a pause
     # @throws Exception  when the duration is not in the correct format or exceed the legit length
     def validateDuration(self, duration):
