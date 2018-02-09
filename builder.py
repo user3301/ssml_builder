@@ -52,7 +52,7 @@ class Speech:
         self.present(strength, "the strength was null")
         strength = strength.lower().strip()
         if strength in ("none", "x-weak", "weak", "medium", "strong", "x-strong"):
-            self.content += "<break strength='" + strength + "'/>"
+            self.content.append("<break strength='" + strength + "'/>")
             return self
         else:
             raise ValueError("The strength was not valid.")

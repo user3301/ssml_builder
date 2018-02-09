@@ -39,5 +39,12 @@ class Test_Builder(unittest.TestCase):
 
         self.assertEqual(speech.content,["Hello.", "<break time='1s'/>"])
 
+    def test_050_pauseByStrength(self):
+        speech = Speech()
+        speech.pauseByStrength("weak")
+
+        self.assertEqual(speech.content, ["<break strength='weak'/>"])
+
+
 if __name__ == "__main__":
     unittest.main()
