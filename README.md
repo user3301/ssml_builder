@@ -15,4 +15,15 @@ speech.say("Hello, My name is Amazon Polly.")
  # Output: "<speak>Hello, My name is Amazon Polly.<break time='1s'></speak>"
 ```
 
-## TODO
+## Contributing
+* clone this repo to your local (`git clone https://github.com/user3301/ssml-builder.git`)
+* Create your own branch (`git checkout -b my-new-branch`)
+* Commit changes (`git commit -am ":sparkles:my feature"`)
+* Push (`git push origin my-new-branch`)
+* Pull request
+
+## Author
+* User3301
+:e-mail: stan_gai@hotmail.com
+
+
