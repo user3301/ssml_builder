@@ -45,6 +45,11 @@ class Test_Builder(unittest.TestCase):
 
         self.assertEqual(speech.content, ["<break strength='weak'/>"])
 
+    def test_060_spell(self):
+        speech = Speech()
+        speech.spell("hello")
+
+        self.assertEqual(speech.content,["<say-as interpret-as='spell-out'>hello</say-as>"])
 
 if __name__ == "__main__":
     unittest.main()
