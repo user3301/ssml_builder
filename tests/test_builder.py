@@ -47,9 +47,9 @@ class Test_Builder(unittest.TestCase):
 
     def test_060_spell(self):
         speech = Speech()
-        speech.spell("hello")
+        speech.spell("bye")
 
-        self.assertEqual(speech.content,["<say-as interpret-as='spell-out'>hello</say-as>"])
+        self.assertEqual(speech.content,["<say-as interpret-as='spell-out'>bye</say-as>"])
 
 if __name__ == "__main__":
     unittest.main()
