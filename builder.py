@@ -62,7 +62,7 @@ class Speech:
     # @returns {self}
     def spell(self, word):
         self.present(word, "The word was null")
-        self.content += "<say-as interpret-as='spell-out'>" + self.escape(word) + "</say-as>"
+        self.content.append("<say-as interpret-as='spell-out'>" + self.escape(word) + "</say-as>")
         return self
 
     # insert a say-as = spell-out tag for every single word
