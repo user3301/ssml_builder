@@ -51,5 +51,11 @@ class Test_Builder(unittest.TestCase):
 
         self.assertEqual(speech.content,["<say-as interpret-as='spell-out'>bye</say-as>"])
 
+    def test_070_spellSlowly(self):
+        speech = Speech()
+        speech.spellSlowly("Hi","1s")
+
+        self.assertEqual(speech.content, ["<say-as interpret-as='spell-out'>H</say-as><break time='1s'/><say-as interpret-as='spell-out'>i</say-as><break time ='1s'>"])
+
 if __name__ == "__main__":
     unittest.main()
