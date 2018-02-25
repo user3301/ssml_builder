@@ -72,7 +72,7 @@ class Speech:
     def spellSlowly(self, words, delay):
         self.present(words, "The word was null")
         self.validateDuration(delay)
-        for word in words.split(''):
+        for word in words:
             self.content.append("<say-as interpret-as='spell-out'>" + self.escape(word) + "</say-as>")
             self.pause(delay)
         return self
