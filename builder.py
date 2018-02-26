@@ -93,6 +93,15 @@ class Speech:
         else:
             return '<speak>' + ' '.join(self.content) + '</speak>'
 
+#----------------------------------------------amazon effect -----------------------------------------------------------
+    # insert an amazon "whispered" effect tag
+    # @param saying the raw text
+    # @returns {self}
+    def whispered(self, saying):
+        self.present(saying, "The saying is null")
+        self.content.append("<amazon:effect name='whispered'>" + self.escape(saying) + "</amazon:effect>")
+        return self
+
     # This method escapes any special characters that will cause SSML to be invalid
     def escape(self, word):
         if isinstance(word, basestring):
