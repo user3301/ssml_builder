@@ -15,6 +15,9 @@ speech.say("Hello, My name is Amazon Polly.")
  # Output: "<speak>Hello, My name is Amazon Polly.<break time='1s'></speak>"
 ```
 
+### TODOs
+* `<amazon:effect vocal-tract-length>` tag for timbre adjustment
+
 ## Contributing
 * clone this repo to your local (`git clone https://github.com/user3301/ssml-builder.git`)
 * Create your own branch (`git checkout -b my-new-branch`)

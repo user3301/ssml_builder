@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 A utility class for building SSML format text.
 @author: user3301
@@ -93,7 +94,7 @@ class Speech:
         else:
             return '<speak>' + ' '.join(self.content) + '</speak>'
 
-#----------------------------------------------amazon effect -----------------------------------------------------------
+    # ----------------------------------------------amazon effect -----------------------------------------------------------
     # insert an amazon "whispered" effect tag
     # @param saying the raw text
     # @returns {self}
@@ -101,6 +102,8 @@ class Speech:
         self.present(saying, "The saying is null")
         self.content.append("<amazon:effect name='whispered'>" + self.escape(saying) + "</amazon:effect>")
         return self
+
+    # TODO <amazon:effect vocal-tract-length> tag for timbre
 
     # This method escapes any special characters that will cause SSML to be invalid
     def escape(self, word):
