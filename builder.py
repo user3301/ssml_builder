@@ -106,10 +106,22 @@ class Speech:
 
     # TODO <amazon:effect vocal-tract-length> tag for timbre
 
+    # insert an amazon "soft phonation" effect tag
+    # @param saying the raw text
+    # @returns {self}
     def softPhonation(self, saying):
         self.present(saying, "The saying is null")
         self.content.append("<amazon:effect phonation='soft'>" + self.escape(saying) + "</amazon:effect>")
         return self
+
+    # insert an amazon "dynamic range compression(drc)" effect tag to enhance the volume of certain sounds in a conversation
+    # @param saying the raw text
+    # @returns {self}
+    def drc(self, saying):
+        self.present(saying, "The saying is null")
+        self.content.append("<amazon:effect name='drc'>" + self.escape(saying) + "</amazon:effect>")
+        return self
+
 
     # This method escapes any special characters that will cause SSML to be invalid
     def escape(self, word):
