@@ -69,5 +69,13 @@ class Test_Builder(unittest.TestCase):
 
         self.assertEqual(speech.content, ["<amazon:effect name='whispered'>tell you a secret</amazon:effect>"])
 
+    def test_081_softPhonation(self):
+        speech = Speech()
+        speech.softPhonation("This is Matthew speaking in my softer voice")
+
+        self.assertEqual(speech.content, ["<amazon:effect phonation='soft'>This is Matthew speaking in my softer "
+                                          "voice</amazon:effect>"])
+
+
 if __name__ == "__main__":
     unittest.main()
