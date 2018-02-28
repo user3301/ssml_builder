@@ -1,3 +1,4 @@
+# coding=utf-8
 import unittest
 from builder import Speech
 
@@ -80,7 +81,14 @@ class Test_Builder(unittest.TestCase):
         speech = Speech()
         speech.emphasis("really like", "strong")
 
-        self.assertEqual(speech.content, ["<emphasis level=strong>really like</emphasis>"])
+        self.assertEqual(speech.content, ["<emphasis level='strong'>really like</emphasis>"])
+
+    def test_100_lang(self):
+        speech = Speech()
+        speech.lang("Je ne parle pas français", "fr-FR")
+
+        self.assertEqual(speech.content, ["<lang xml:lang='fr-FR'>Je ne parle pas français</lang>"])
+
 
 if __name__ == "__main__":
     unittest.main()

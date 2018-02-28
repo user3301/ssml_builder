@@ -18,21 +18,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="builder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="131" column="59" lean-forward="false" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
+            <state relative-caret-position="399">
+              <caret line="150" column="98" lean-forward="true" selection-start-line="150" selection-start-column="98" selection-end-line="150" selection-end-column="98" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_builder.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_builder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="669">
-              <caret line="82" column="91" lean-forward="false" selection-start-line="82" selection-start-column="91" selection-end-line="82" selection-end-column="91" />
+            <state relative-caret-position="422">
+              <caret line="89" column="63" lean-forward="false" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -189,24 +189,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.26 at 09h 56m 09s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.26 at 09h 57m 07s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.26 at 10h 01m 39s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.26 at 10h 10m 33s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.26 at 10h 11m 55s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.02.26 at 12h 29m 42s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_builder_py - 2018.02.27 at 10h 45m 06s.xml">
       <configuration name="Unittests in test_builder.py" configurationId="tests" />
     </history-entry>
@@ -217,6 +199,24 @@
       <configuration name="Unittests in test_builder.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_test_builder_py - 2018.02.28 at 13h 05m 57s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.28 at 13h 06m 51s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.28 at 14h 32m 20s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.28 at 14h 33m 31s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.28 at 14h 36m 07s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.28 at 14h 36m 10s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.02.28 at 14h 39m 12s.xml">
       <configuration name="Unittests in test_builder.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -236,12 +236,12 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10695469" sideWeight="0.4937107" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23809524" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39915523" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3982684" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1078125" sideWeight="0.5062893" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -283,7 +283,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -668,18 +668,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_builder.py">
+    <entry file="file://$PROJECT_DIR$/builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="82" column="91" lean-forward="false" selection-start-line="82" selection-start-column="91" selection-end-line="82" selection-end-column="91" />
+        <state relative-caret-position="399">
+          <caret line="150" column="98" lean-forward="true" selection-start-line="150" selection-start-column="98" selection-end-line="150" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/builder.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="131" column="59" lean-forward="false" selection-start-line="131" selection-start-column="59" selection-end-line="131" selection-end-column="59" />
+        <state relative-caret-position="422">
+          <caret line="89" column="63" lean-forward="false" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
           <folding />
         </state>
       </provider>

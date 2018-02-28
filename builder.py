@@ -124,15 +124,36 @@ class Speech:
 
     #-----------------------------------------end of amazon effect------------------------------------------------------
 
+    # insert an emphasis tag
+    # @param saying the raw text
+    # @param level the degree of emphasis that you want to place on the text
+    # @returns {self}
     def emphasis(self, saying, level):
         self.present(saying, "The saying is null")
         if level.lower() not in ["strong", "moderate", "reduced"]:
             raise Exception("The level type is invalid")
         else:
-            self.content.append("<emphasis level=%s>"%level + self.escape(saying) + "</emphasis>")
+            self.content.append("<emphasis level='%s'>"%level + self.escape(saying) + "</emphasis>")
+        return self
+
+    # insert an language tag
+    # @param saying the raw text
+    # @param accentType the accent voice attemptted to use
+    # @returns {self}
+    def lang(self, saying, accentType):
+        langSet = {"da-DK", "nl-NL", "en-AU", "en-GB", "en-IN", "en-US", "en-GB-WLS", "fr-FR", "fr-CA", "de-DE",
+                   "is-IS", "it-IT", "ja-JP", "ko-KR", "nb-NO", "pl-PL", "pt-BR", "pt-PT", "ro-RO", "ru-RU", "es-ES",
+                   "es-US", "sv-SE", "tr-TR", "cy-GB"}
+        self.present(saying, "The saying is null")
+        if accentType not in langSet:
+            raise Exception("The language type is invalid")
+        else:
+            self.content.append("<lang xml:lang='%s'>"%accentType + self.escape(saying) + "</lang>")
         return self
 
     # This method escapes any special characters that will cause SSML to be invalid
+    # @param word the word needs to be examed
+    # returns {word} the replaced word string
     def escape(self, word):
         if isinstance(word, basestring):
             word = word.replace('&', 'and')
