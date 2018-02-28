@@ -122,6 +122,15 @@ class Speech:
         self.content.append("<amazon:effect name='drc'>" + self.escape(saying) + "</amazon:effect>")
         return self
 
+    #-----------------------------------------end of amazon effect------------------------------------------------------
+
+    def emphasis(self, saying, level):
+        self.present(saying, "The saying is null")
+        if level.lower() not in ["strong", "moderate", "reduced"]:
+            raise Exception("The level type is invalid")
+        else:
+            self.content.append("<emphasis level=%s>"%level + self.escape(saying) + "</emphasis>")
+        return self
 
     # This method escapes any special characters that will cause SSML to be invalid
     def escape(self, word):

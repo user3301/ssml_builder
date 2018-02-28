@@ -76,6 +76,11 @@ class Test_Builder(unittest.TestCase):
         self.assertEqual(speech.content, ["<amazon:effect phonation='soft'>This is Matthew speaking in my softer "
                                           "voice</amazon:effect>"])
 
+    def test_090_emphasis(self):
+        speech = Speech()
+        speech.emphasis("really like", "strong")
+
+        self.assertEqual(speech.content, ["<emphasis level=strong>really like</emphasis>"])
 
 if __name__ == "__main__":
     unittest.main()
