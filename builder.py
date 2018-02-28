@@ -78,22 +78,6 @@ class Speech:
             self.pause(delay)
         return self
 
-    # make this speech into ssml text
-
-    # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
-    def present(self, value, msg):
-        if value is None:
-            raise Exception(msg)
-
-    # construct an SSML format string
-    # @param excludeSpeakTag boolean value to determine if root tag <speak/> is needed
-    # @returns {string}
-    def ssml(self, excludeSpeakTag):
-        if excludeSpeakTag:
-            return ' '.join(self.content)
-        else:
-            return '<speak>' + ' '.join(self.content) + '</speak>'
-
     # ----------------------------------------------amazon effect ------------------------------------------------------
 
     # insert an amazon "whispered" effect tag
@@ -122,7 +106,16 @@ class Speech:
         self.content.append("<amazon:effect name='drc'>" + self.escape(saying) + "</amazon:effect>")
         return self
 
-    #-----------------------------------------end of amazon effect------------------------------------------------------
+    # insert a mark tag, this tag provides the user with the ability to place a custom tag within the text. No action is
+    # taken on the tag by Amazon Polly, but when SSML metadata is returned, the position of this tag will also be returned.
+    # @param tag_name the custom tag
+    # returns {self}
+    # def mark(self, tag_name):
+    #     self.present(tag_name, "Tag name is null")
+    #     self.content.append("<mark name='%s'/>"% tag_name)
+    #     return self
+
+    # -----------------------------------------end of amazon effect------------------------------------------------------
 
     # insert an emphasis tag
     # @param saying the raw text
@@ -133,7 +126,7 @@ class Speech:
         if level.lower() not in ["strong", "moderate", "reduced"]:
             raise Exception("The level type is invalid")
         else:
-            self.content.append("<emphasis level='%s'>"%level + self.escape(saying) + "</emphasis>")
+            self.content.append("<emphasis level='%s'>" % level + self.escape(saying) + "</emphasis>")
         return self
 
     # insert an language tag
@@ -148,7 +141,7 @@ class Speech:
         if accentType not in langSet:
             raise Exception("The language type is invalid")
         else:
-            self.content.append("<lang xml:lang='%s'>"%accentType + self.escape(saying) + "</lang>")
+            self.content.append("<lang xml:lang='%s'>" % accentType + self.escape(saying) + "</lang>")
         return self
 
     # This method escapes any special characters that will cause SSML to be invalid
@@ -182,3 +175,17 @@ class Speech:
                 raise Exception("The duration exceeds the maximum length.")
         else:
             raise Exception("The format of the duration is incorrect.")
+
+    # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
+    def present(self, value, msg):
+        if value is None:
+            raise Exception(msg)
+
+    # construct an SSML format string
+    # @param excludeSpeakTag boolean value to determine if root tag <speak/> is needed
+    # @returns {string}
+    def ssml(self, excludeSpeakTag):
+        if excludeSpeakTag:
+            return ' '.join(self.content)
+        else:
+            return '<speak>' + ' '.join(self.content) + '</speak>'

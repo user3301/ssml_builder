@@ -17,6 +17,7 @@ speech.say("Hello, My name is Amazon Polly.")
 
 ### TODOs
 * `<amazon:effect vocal-tract-length>` tag for timbre adjustment
+* `<mark name='custom_tag_name'/>` tag
 
 ## Contributing
 * clone this repo to your local (`git clone https://github.com/user3301/ssml-builder.git`)

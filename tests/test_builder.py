@@ -77,6 +77,14 @@ class Test_Builder(unittest.TestCase):
         self.assertEqual(speech.content, ["<amazon:effect phonation='soft'>This is Matthew speaking in my softer "
                                           "voice</amazon:effect>"])
 
+    # def test_082_mark(self):
+    #     speech = Speech()
+    #     speech.say("Mary had a little")
+    #     speech.mark("animal")
+    #     speech.say("lamb")
+
+        self.assertEqual(speech.content, ["<speak>Mary had a little</speak>"])
+
     def test_090_emphasis(self):
         speech = Speech()
         speech.emphasis("really like", "strong")
