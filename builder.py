@@ -169,6 +169,13 @@ class Speech:
             raise Exception("The alphabet standard is invalid")
         return self
 
+    def prosody(self, word, attributes):
+        self.present(word, "The word is null")
+
+        validRates = {"x-slow", "slow", "medium", "fast", "x-fast"}
+        validPitches = {"x-slow", "slow", "medium", "fast", "x-fast"}
+        validVolumns = {"silent", "x-soft", "soft", "medium", "loud", "x-loud"}
+    #TODO wip
 
 
     # This method escapes any special characters that will cause SSML to be invalid
