@@ -4,7 +4,6 @@
     <list default="true" id="227ee9f4-d395-4ea0-a976-50d5d6e88016" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/builder.py" afterPath="$PROJECT_DIR$/builder.py" />
-      <change beforePath="$PROJECT_DIR$/tests/test_builder.py" afterPath="$PROJECT_DIR$/tests/test_builder.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,8 +20,8 @@
       <file leaf-file-name="builder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="156" column="249" lean-forward="true" selection-start-line="156" selection-start-column="249" selection-end-line="156" selection-end-column="249" />
+            <state relative-caret-position="339">
+              <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -31,8 +30,8 @@
       <file leaf-file-name="test_builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="101" column="50" lean-forward="true" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
+            <state relative-caret-position="835">
+              <caret line="103" column="76" lean-forward="false" selection-start-line="103" selection-start-column="76" selection-end-line="103" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -194,12 +193,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_builder_py - 2018.03.01 at 11h 35m 23s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_builder_py - 2018.03.01 at 11h 54m 14s.xml">
-      <configuration name="Unittests in test_builder.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_builder_py - 2018.03.01 at 11h 55m 45s.xml">
       <configuration name="Unittests in test_builder.py" configurationId="tests" />
     </history-entry>
@@ -224,6 +217,12 @@
     <history-entry file="Unittests_in_test_builder_py - 2018.03.01 at 12h 28m 56s.xml">
       <configuration name="Unittests in test_builder.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.03.01 at 13h 01m 11s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_builder_py - 2018.03.01 at 13h 02m 23s.xml">
+      <configuration name="Unittests in test_builder.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -243,9 +242,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32792208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23809524" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23809524" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1078125" sideWeight="0.5062893" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3982684" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -694,16 +693,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="101" column="50" lean-forward="true" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
+        <state relative-caret-position="835">
+          <caret line="103" column="76" lean-forward="false" selection-start-line="103" selection-start-column="76" selection-end-line="103" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="156" column="249" lean-forward="true" selection-start-line="156" selection-start-column="249" selection-end-line="156" selection-end-column="249" />
+        <state relative-caret-position="339">
+          <caret line="146" column="12" lean-forward="false" selection-start-line="146" selection-start-column="12" selection-end-line="146" selection-end-column="12" />
           <folding />
         </state>
       </provider>

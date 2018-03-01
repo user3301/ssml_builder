@@ -144,6 +144,11 @@ class Speech:
             self.content.append("<lang xml:lang='%s'>" % accentType + self.escape(saying) + "</lang>")
         return self
 
+    # insert a phonetic tag for the indicated text to provide a phonetic pronunciation
+    # @param word the indicated text
+    # @param alphabet phoneme system used
+    # @param ph indicates the phonetic symbols to be used for pronunciation
+    # returns {self}
     def phoneme(self, word, alphabet, ph):
         self.present(word, "The word is null")
         if alphabet is "ipa":
@@ -162,6 +167,7 @@ class Speech:
                 raise Exception("The phonetic symbols is invalid")
         else:
             raise Exception("The alphabet standard is invalid")
+        return self
 
     # This method escapes any special characters that will cause SSML to be invalid
     # @param word the word needs to be examed
