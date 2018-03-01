@@ -144,6 +144,25 @@ class Speech:
             self.content.append("<lang xml:lang='%s'>" % accentType + self.escape(saying) + "</lang>")
         return self
 
+    def phoneme(self, word, alphabet, ph):
+        self.present(word, "The word is null")
+        if alphabet is "ipa":
+            ipaPhonemes = {"b", "d", "d͡ʒ", "ð", "f", "g", "h", "j", "k", "l", "m", "n", "ŋ", "p", "ɹ", "s", "ʃ", "t", "t͡ʃ", "Θ", "v", "w", "z", "ʒ", "ə", "ɚ", "æ", "aɪ", "aʊ", "ɑ", "eɪ", "ɝ", "ɛ", "i:", "ɪ", "oʊ", "ɔ", "ɔɪ", "u", "ʊ", "ʌ", "\'", ",", "."}
+            if set(ph).issubset(ipaPhonemes):
+                phValue = ''.join(str(x) for x in ph)
+                self.content.append("<phoneme alphabet='%s' ph='%s'>"%(alphabet, phValue) + self.escape(word) + "</phoneme>")
+            else:
+                raise Exception("The phonetic symbols is invalid")
+        elif alphabet is "x-sampa":
+            xsampaPhonemes = {"b", "d", "dZ", "D", "f", "g", "h", "j", "k", "l", "m", "n", "N", "p", "r\\", "s", "S", "t", "tS", "T", "v", "w", "z", "Z", "@", "@\'", "{", "aI", "aU", "A", "eI", "3\'", "E", "i", "I", "oU", "O", "OI", "u", "U", "V", "\"", "%", "."}
+            if set(ph).issubset(xsampaPhonemes):
+                phValue = ''.join(str(x) for x in ph)
+                self.content.append("<phoneme alphabet='%s' ph='%s'>" % (alphabet, phValue) + self.escape(word) + "</phoneme>")
+            else:
+                raise Exception("The phonetic symbols is invalid")
+        else:
+            raise Exception("The alphabet standard is invalid")
+
     # This method escapes any special characters that will cause SSML to be invalid
     # @param word the word needs to be examed
     # returns {word} the replaced word string
