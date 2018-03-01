@@ -103,6 +103,12 @@ class Test_Builder(unittest.TestCase):
 
         self.assertEqual(speech.content, ["<phoneme alphabet='ipa' ph='bdd͡ʒ'>pecan</phoneme>"])
 
+    def test_111_toXML(self):
+        speech = Speech()
+        speech.say("hello,").say("it's me & polly.").paragraph("Paragraphs are commonly numbered using the decimal system, where (in books) the integral part of the decimal represents the number of the chapter and the fractional parts are arranged in each chapter in order of magnitude.")
+
+        print speech.toXML()
+
 
 if __name__ == "__main__":
     unittest.main()

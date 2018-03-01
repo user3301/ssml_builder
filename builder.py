@@ -223,3 +223,9 @@ class Speech:
             return ' '.join(self.content)
         else:
             return '<speak>' + ' '.join(self.content) + '</speak>'
+
+    # convert SSML format string into XML format
+    # returns {xml}
+    def toXML(self):
+        xml = "<?xml version='1.0'?>\n<speak version='1.1'\n xmlns='http://www.w3.org/2001/10/synthesis'\n xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'\n xsi:schemaLocation='http://www.w3.org/2001/10/synthesis http://www.w3.org/TR/speech-synthesis11/synthesis.xsd'\n xml:lang='en-US'>" + self.ssml(True) + "</speak>"
+        return xml

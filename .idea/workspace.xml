@@ -20,8 +20,8 @@
       <file leaf-file-name="builder.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="178" column="8" lean-forward="false" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="8" />
+            <state relative-caret-position="539">
+              <caret line="227" column="302" lean-forward="true" selection-start-line="227" selection-start-column="302" selection-end-line="227" selection-end-column="302" />
               <folding />
             </state>
           </provider>
@@ -30,7 +30,7 @@
       <file leaf-file-name="test_builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
+            <state relative-caret-position="1995">
               <caret line="103" column="76" lean-forward="false" selection-start-line="103" selection-start-column="76" selection-end-line="103" selection-end-column="76" />
               <folding />
             </state>
@@ -103,17 +103,12 @@
               <item name="ssml-builder" type="b2602c69:ProjectViewProjectNode" />
               <item name="ssml-builder" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ssml-builder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssml-builder" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -667,7 +662,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="478">
             <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -675,7 +669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
+        <state relative-caret-position="1995">
           <caret line="103" column="76" lean-forward="false" selection-start-line="103" selection-start-column="76" selection-end-line="103" selection-end-column="76" />
           <folding />
         </state>
@@ -683,8 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="178" column="8" lean-forward="false" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="8" />
+        <state relative-caret-position="539">
+          <caret line="227" column="302" lean-forward="true" selection-start-line="227" selection-start-column="302" selection-end-line="227" selection-end-column="302" />
           <folding />
         </state>
       </provider>
