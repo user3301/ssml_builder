@@ -169,6 +169,8 @@ class Speech:
             raise Exception("The alphabet standard is invalid")
         return self
 
+
+
     # This method escapes any special characters that will cause SSML to be invalid
     # @param word the word needs to be examed
     # returns {word} the replaced word string
