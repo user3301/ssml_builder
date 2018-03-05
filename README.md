@@ -1,4 +1,7 @@
 # SSML Builder
+
+[![license](https://img.shields.io/github/license/slashsBin/styleguide-git-commit-message.svg)](https://github.com/user3301/ssml-builder/blob/master/LICENSE)
+
 This utility class implements functions to builder Speech Synthesis Markup Language(SSML) with a fluent interface design.
 
 ## Usage Example
