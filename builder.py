@@ -6,6 +6,8 @@ A utility class for building SSML format text.
 """
 import re
 
+from six import string_types
+
 
 class Speech:
 
@@ -182,7 +184,7 @@ class Speech:
     # @param word the word needs to be examed
     # returns {word} the replaced word string
     def escape(self, word):
-        if isinstance(word, basestring):
+        if isinstance(word, string_types):
             word = word.replace('&', 'and')
             word = word.replace('<', '')
             word = word.replace('>', '')
