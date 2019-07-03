@@ -15,7 +15,7 @@ class Speech:
     def __init__(self):
         self.content = []
 
-    # This appends raw text into the <speak/> tag
+    # This appends raw text into the <speak/> tag.
     # @param saying The raw text insert into the speak tag.
     # returns {self} 
     def say(self, saying):
@@ -173,7 +173,6 @@ class Speech:
 
     def prosody(self, word, attributes):
         self.present(word, "The word is null")
-
         validRates = {"x-slow", "slow", "medium", "fast", "x-fast"}
         validPitches = {"x-slow", "slow", "medium", "fast", "x-fast"}
         validVolumns = {"silent", "x-soft", "soft", "medium", "loud", "x-loud"}
@@ -183,6 +182,7 @@ class Speech:
     # This method escapes any special characters that will cause SSML to be invalid
     # @param word the word needs to be examed
     # returns {word} the replaced word string
+    @classmethod
     def escape(self, word):
         if isinstance(word, string_types):
             word = word.replace('&', 'and')
@@ -199,6 +199,7 @@ class Speech:
     # range (0ms - 10000ms)
     # @param duration The duration of a pause
     # @throws Exception  when the duration is not in the correct format or exceed the legit length
+    @classmethod
     def validateDuration(self, duration):
         pattern = "^(\d*\.?\d+)(s|ms)$"
         if re.match(pattern, duration):
@@ -213,6 +214,7 @@ class Speech:
             raise Exception("The format of the duration is incorrect.")
 
     # Validates that the provided value is not null or undefined. It will throw an exception if it's either.
+    @classmethod
     def present(self, value, msg):
         if value is None:
             raise Exception(msg)

@@ -1,6 +1,7 @@
 # SSML Builder
 
-[![license](https://img.shields.io/github/license/slashsBin/styleguide-git-commit-message.svg)](https://github.com/user3301/ssml-builder/blob/master/LICENSE)
+[![License: GPL](https://img.shields.io/badge/License-GPL-blue.svg)](https://github.com/user3301/ssml-builder/blob/master/LICENSE)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/464a341ea5dd43f3bc0a39c47dfae391)](https://www.codacy.com/app/user3301/ssml_builder?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=user3301/ssml_builder&amp;utm_campaign=Badge_Grade)
 
 This utility class implements functions to builder Speech Synthesis Markup Language(SSML) with a fluent interface design.
 
@@ -8,7 +9,8 @@ This utility class implements functions to builder Speech Synthesis Markup Langu
 
 ### Basic Usage
 This utility class affords user to append SSML tags in a fluent interface fashion:
-```
+
+```python
 from ssml-builder import Speech
 speech = Speech()
 speech.say("Hello, My name is Amazon Polly.")
