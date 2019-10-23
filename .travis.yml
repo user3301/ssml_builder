@@ -1,0 +1,7 @@
+language: python
+python:
+  - "3.7"
+cache: pip
+install:
+script:
+  python ./tests/test_builder.py
