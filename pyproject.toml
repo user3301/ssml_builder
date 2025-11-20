@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssml-builder"
+version = "1.0.0"
+description = "A utility class for building Speech Synthesis Markup Language (SSML) with a fluent interface"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "GPL-3.0"}
+authors = [
+    {name = "User3301", email = "stan_gai@hotmail.com"}
+]
+
+dependencies = []
+
+[tool.setuptools]
+packages = ["ssml_builder"]

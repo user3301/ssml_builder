@@ -5,19 +5,33 @@
 
 This utility class implements functions to builder Speech Synthesis Markup Language(SSML) with a fluent interface design. It contains tag supoorted by Amazon Polly,GoogleTTS ans Microsoft Watsons.
 
+## Installation
+
+Install from source:
+
+```bash
+pip install .
+```
+
+Or install in development mode:
+
+```bash
+pip install -e .
+```
+
 ## Usage Example
 
 ### Basic Usage
 This utility class affords user to append SSML tags in a fluent interface fashion:
 
 ```python
-from ssml-builder import Speech
+from ssml_builder import Speech
+
 speech = Speech()
-speech.say("Hello, My name is Amazon Polly.")
-      .pause("1s")
-      .ssml(False)
- 
- # Output: "<speak>Hello, My name is Amazon Polly.<break time='1s'></speak>"
+speech.say("Hello, My name is Amazon Polly.").pause("1s")
+print(speech.ssml(False))
+
+# Output: "<speak>Hello, My name is Amazon Polly.<break time='1s'/></speak>"
 ```
 
 ### TODOs
